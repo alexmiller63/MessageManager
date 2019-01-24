@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad11_0rounded" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,11 +13,34 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MessageManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1GS-bj-bPY">
+                                <rect key="frame" x="0.0" y="24" width="834" height="1150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <viewLayoutGuide key="safeArea" id="DyF-ok-gab"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1GS-bj-bPY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Kma-Bi-SjG"/>
+                            <constraint firstItem="1GS-bj-bPY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nvd-bR-Zbu"/>
+                            <constraint firstItem="1GS-bj-bPY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QCb-SK-6JJ"/>
+                            <constraint firstItem="1GS-bj-bPY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Vec-Ds-PII"/>
+                            <constraint firstItem="1GS-bj-bPY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XIQ-v9-F1J"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1GS-bj-bPY" secondAttribute="trailing" id="caK-hc-qIb"/>
+                            <constraint firstItem="1GS-bj-bPY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dFQ-Ss-POH"/>
+                            <constraint firstItem="1GS-bj-bPY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="eoY-vZ-sVG"/>
+                            <constraint firstItem="1GS-bj-bPY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ewj-K9-7kZ"/>
+                            <constraint firstItem="1GS-bj-bPY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i9G-Yt-f9e"/>
+                            <constraint firstItem="1GS-bj-bPY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lZ4-Ba-bgc"/>
+                            <constraint firstItem="1GS-bj-bPY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sF8-6R-8y3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1GS-bj-bPY" secondAttribute="bottom" id="wlP-LW-ZAd"/>
+                            <constraint firstItem="1GS-bj-bPY" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="wpS-ID-ZSD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
